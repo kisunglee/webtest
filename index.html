@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<style>
+
+</style>
+
+<body>
+    <a id="target" href="http://opentutorials.org">opentutorials</a>
+    <input type="text" onclick=open1() value="Hello world" />
+    <ul>
+        <li class='a' id='my'> LLLL </li>
+        <li class='b' id='my'> LLLL </li>
+    </ul>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var t =$('#target');
+    console.log(t.attr('href'));
+
+    // t.attr('title', 'opentutorials.org');
+
+
+    function open1() {
+        window.open('index2.html');
+    }        
+
+    jQuery(document).ready(function($) {
+        $('body').prepend('<h1>Hello world111</h1>');
+    });
+
+    $('li').css('color', 'red');
+    $('.b').css('color', 'blue');
+    $('#my').css('color', 'yellow');
+
+
+    
+</script>
+
+</html>
